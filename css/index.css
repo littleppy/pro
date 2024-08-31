@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+body {
+    display: flex;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-style: bold;
+    justify-content: center;
+    align-items: center;  
+    background: linear-gradient(to right, #c6e9f3, #dac5d5);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+     
+}
+
+/* Photo slider styles */
+.photo-slider {
+    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    display: flex;
+    z-index: -1; /* Ensure it’s behind the navbar */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    animation: slide 6s ; /* Slide effect */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the div */
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #be6ba5, #ffb6b6);
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 10;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin: 30;
+
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #df4c91;
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.auth-links a:active {
+    background-color: #89b0dd;
+    color: #ebc8c8;
+}
+
+
+
+.button {
+    border: salmon;
+    color: rgb(170, 9, 98);
+    padding: 20px 70px ;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+
+    font-size: 20px;
+}
+.button:nth-child(1) {
+    background-color: #fab2cf; /* Medium pink */
+}
+.button:nth-child(2) {
+    background-color: #FFE7E7; /* Medium pink */
+}
+
+.button:nth-child(3) {
+    background-color: #f7b0cc; /* Darker pink */
+}
+
+.button:hover {
+    
+    background-color: #ff9fae; /* White background on hover */
+    color: #ffffff; /* Dark text color on hover */
+    transform: scale(1.15); /* Slightly enlarge button on hover */
+}
+
+.button:active {
+    background-color: #FF8C9E; /* Light grey background when button is clicked */
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+.button-slide {
+    border: salmon;
+    color: rgb(170, 9, 98);
+    padding: 20px 70px ;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+
+    font-size: 20px;
+    background-color: #fab2cf;
+}
+.button-slide:hover {
+    
+    background-color: #ff9fae; /* White background on hover */
+    color: #ffffff; /* Dark text color on hover */
+    transform: scale(1.15); /* Slightly enlarge button on hover */
+}
+
+.button-slide:active {
+    background-color: #ffffff; /* Light grey background when button is clicked */
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+.button-slide2 {
+    border: rgb(255, 255, 255);
+    color: rgb(170, 9, 98);
+    padding: 10px 70px ;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+
+    font-size: 20px;
+    background-color: #ffffff;
+}
+.button-slide2:hover {
+    
+    background-color: #ffffff; /* White background on hover */
+    color: #662f2f; /* Dark text color on hover */
+    transform: scale(1.15); /* Slightly enlarge button on hover */
+}
+
+.button-slide2:active {
+    background-color: #FF8C9E; /* Light grey background when button is clicked */
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+.info-container {
+    display: flex;
+
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 300px auto;
+    width: 100%;
+    max-width: 100%;
+   
+}
+
+
+.info-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.info-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info-content p {
+    color: #666;
+    line-height: 1.6;
+}
+/* Gallery container styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Space between images */
+    padding: 10px;
+}
+
+/* Gallery item styling */
+.gallery-item {
+    overflow: hidden; /* Hide overflow for a cleaner look */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove bottom margin/space */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Indicate clickable images */
+}
+
+/* Add a hover effect */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Lightbox styling */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: auto;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.footer {
+    background-color: #c57f7f; /* Pink background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.blank{
+    margin-bottom: 500px;
+}

@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;  
+    background: linear-gradient(to right, #c6e9f3, #dac5d5);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+ 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #be6ba5, #ffb6b6);
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 10;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin: 30;
+   
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #df4c91;
+}
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.auth-links a:active {
+    background-color: #89b0dd;
+    color: #ebc8c8;
+}
+
+
+/* Full viewport height and center content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fce4ec; /* Light pink background */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the registration container */
+.register-container {
+    background-color: #ffffff; /* White background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Heading style */
+h1 {
+    color: #ec407a; /* Pink color for heading */
+    margin-bottom: 20px;
+}
+
+/* Form element styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    color: #ec407a; /* Pink color for labels */
+    text-align: left;
+}
+
+/* Input field styling */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ec407a; /* Pink border for input fields */
+    border-radius: 5px;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #ec407a; /* Pink background for button */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* White text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* Login link styling */
+.login-link {
+    margin-top: 15px;
+    color: #ec407a; /* Pink color for the text */
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #ec407a; /* Pink color for the link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;  
+    background: linear-gradient(to right, #c6e9f3, #dac5d5);
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+ 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #be6ba5, #ffb6b6);
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 10;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin: 30;
+   
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #df4c91;
+}
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.auth-links a:active {
+    background-color: #89b0dd;
+    color: #ebc8c8;
+}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic reset for consistency */
+body, h1, form, label, input, button, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full viewport height and center content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fcbfdd, #fae1dd); /* Gradient pink background */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling for the registration container */
+.register-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background element */
+.register-container::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(255, 182, 193, 0.3) 20%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+/* Heading style */
+h1 {
+    color: #ec407a;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Form element styling */
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    color: #ec407a;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Input field styling */
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid #ec407a;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #d81b60;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background: linear-gradient(45deg, #ec407a, #f48fb1);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #d81b60, #f06292);
+    transform: scale(1.05);
+}
+
+/* Login link styling */
+.login-link {
+    margin-top: 20px;
+    color: #ec407a;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.login-link a {
+    color: #ec407a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+    color: #d81b60;
+}

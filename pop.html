@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Popcat Shop</title>
+    <link rel="stylesheet" href="css/pop.css">
+    <script src="js/pop.js" defer></script>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">KRU FRESY</a>
+        </div>
+        <div class="auth-links">
+          
+            <a href="pop.html">Pop fresy</a>
+            <a href="activity.html">Activity</a>
+            <a href="talk.html">Talk</a>
+            <a href="/index.html">Home</a>
+       
+        </div>
+    </nav>
+    <main class="container" >
+   
+    <div class="content">
+        <h1>กิจกรรมการประกวดดาวเดือนประจำสาขาวิทยาศาสตร์และเทคโนโลยีประจำปี 2567</h1>
+        <h3>รายชื่อดาวเดือนประจำสาขา และจำนวนคะแนนโหวต ท่านสามารถกดเลือกโหวตเพื่อเป็นกำลังใจให้แก่ผู้แข่งขันได้จนถึงวันที่มหาลัยกำหนด</h3>
+        <h3>โดยผู้ที่ได้คะแแนสูงสุดจะได้รับรางวัล Popular Poping Vote</h3>
+        <h4>ไม่มีผลต่อคะแนนการเข้าแข่งขัน</h4>
+    </div>
+    <main class="container">
+        <section class="popcat-section">
+            <div class="popcat-wrapper">
+
+                <img src="data/popf1.jpg" alt="Popcat 1" id="popcat1" class="popcat">
+                <h1>S1 นางวสาวนันทืตา พันดวง (บีม) สาขาคอมพิวเตอร์ศึกษา</h1>
+                <p id="click-count1" class="click-count"> 0</p>
+            </div>
+            <div class="popcat-wrapper">
+
+                <img src="data/popf2.jpg" alt="Popcat 2" id="popcat2" class="popcat">
+                <h1>S2 นางสาวสิรภัทร นายหงษ์ (อิงดาว) สาขาคอมพิวเตอร์ศึกษา า</h1>
+                <p id="click-count2" class="click-count"> 0</p>
+            </div>
+            <div class="popcat-wrapper">
+            
+                <img src="data/popf3.jpg" alt="Popcat 3" id="popcat3" class="popcat">
+                <h1>S1 นางวสาวนันทืตา พันดวง (บีม) สาขาคอมพิวเตอร์ศึกษา</h1>
+                <p id="click-count3" class="click-count">0</p>
+            </div>
+        </section>
+
+        <div class="content">
+            <h1>ร่วมซื่อของขวัญ เพิ่อไว้ใช้โหวตในเวทีการประกวด</h1>
+            <h3>ในการประกวดจะมีการให้ของขวัญเพื่อแสดงความยินดีให้กับผู้เข้าประกวด โดยทุกชิ้นจะนับเป็นคะแนน</h3>
+            <h4>ท่านสามารถนำหลักฐารการซื้อไปให้จุดแลกซื้อของขวัญ ณ วันแข่ง โดยราคาในเว็ปจะถูกกว่าหน้างาน</h4>
+            <h4> เนื่องจากจะได้เตรียมจำนวนของขวัญให้ท่าน เพื่อเลี่ยงปัญหาจำนวนของขวัญไม่เพียงพอ</h4>
+        </div>
+        <section class="shop-container">
+            <header>
+                <h3> รายการของขวัญ </h6>
+              
+                <div class="cart">
+                   
+                    <span id="cartCount">0</span>
+                </div>
+            </header>
+            <main>
+                <section class="products">
+                    <div class="product-card">
+                        <img src="data/gift1.jpg" alt="Product 1">
+                        <h2>พวงมาลัย</h2>
+                        <h4>1 คะแนน</h4>
+                        <p>5 บาท</p>
+                        <button data-product="พวงมาลัย" data-price="5">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="data/gift2.jpg" alt="Product 2">
+                        <h2>ธง</h2>
+                        <h4>2 คะแนน</h4>
+                        <p>10 บาท</p>
+                        <button data-product="ธง" data-price="10">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="data/gift.jpg" alt="Product 3">
+                        <h2>ดอกไม้</h2>
+                        <h4>3 คะแนน</h4>
+                        <p>15 บาท</p>
+                        <button data-product="ดอกไม้" data-price="15">Add to Cart</button>
+                    </div>
+                </section>
+            </main>
+            <div class="cart-modal" id="cartModal">
+                <div class="cart-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Your Cart</h2>
+                    <div id="cartItems"></div>
+                    <p><strong>Total:</strong> $<span id="cartTotal">0.00</span></p>
+                    <button id="checkoutButton">Checkout</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</html>
