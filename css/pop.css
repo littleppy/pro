@@ -259,3 +259,33 @@ header h1 {
     border-radius: 8px;
     text-decoration-color: #c6e9f3;
 }
+.footer {
+    background-color: #f8bbd0; /* Light pink background */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for links */
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

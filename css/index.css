@@ -57,21 +57,17 @@ body {
     align-items: center;
     padding: 15px 30px;
     background: linear-gradient(90deg, #be6ba5, #ffb6b6);
-    
     position: fixed;
     width: 100%;
     top: 0;
-    left: 10;
-    margin-right: 50px;
-    margin-left: 100px;
-    margin: 30;
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .logo a {
     color: white;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 2px;
     transition: color 0.3s ease;
@@ -95,13 +91,12 @@ body {
     background-color: #ffffff;
     color: #333;
 }
-
-.auth-links a:active {
-    background-color: #89b0dd;
-    color: #ebc8c8;
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows buttons to wrap if they don't fit in one line */
+    margin-bottom: 20px; /* Space between button containers */
 }
-
-
 
 .button {
     border: salmon;
@@ -185,13 +180,12 @@ body {
 }
 .info-container {
     display: flex;
-
     align-items: center;
     background-color: #fff;
     border-radius: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    margin: 300px auto;
+    margin: 150px auto;
     width: 100%;
     max-width: 100%;
    
@@ -266,8 +260,8 @@ body {
     color: white;
     cursor: pointer;
 }
-.footer {
-    background-color: #c57f7f; /* Pink background color */
+/*footer {
+    background-color: #c57f7f; /* Pink background color 
     color: white;
     text-align: center;
     padding: 20px;
@@ -300,7 +294,139 @@ body {
 .footer-links a:hover {
     text-decoration: underline;
 }
-
+**/
 .blank{
     margin-bottom: 500px;
+}
+.blank2{
+    margin-bottom: 300px;
+}
+header {
+    background: #d81b60;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+header {
+    background: #d81b60;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.section {
+    margin-top: 20px;
+}
+.section h2 {
+    color: #d81b60;
+    border-bottom: 2px solid #d81b60;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, fr));
+    gap: 30px; /* Increased gap between items */
+}
+article {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 10px; /* Added padding inside each article */
+}
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    border-radius: 8px 8px 0 0; /* Rounded top corners for the image */
+}
+article img:hover {
+    opacity: 0.8;
+}
+.content {
+    padding: 15px;
+}
+h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #a07d8a;
+}
+a {
+    color: #e6a8bf;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    background: #a75372;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.image-link {
+    margin: 10px;
+    display: inline-block;
+    overflow: hidden; /* Ensures the circle shape is maintained */
+    border-radius: 50%; /* Make container circular */
+    margin-bottom: 100px;
+}
+.image-link img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Make height same as width for a perfect circle */
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+    border-radius: 50%; /* Makes the image circular */
+    transition: transform 0.3s ease;
+}
+.image-link img:hover {
+    transform: scale(1.1);
+}
+.footer {
+    background-color: #f8bbd0; /* Light pink background */
+    color: #ffffff; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for links */
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
