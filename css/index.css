@@ -105,13 +105,13 @@ body {
 
 .button {
     border: salmon;
+    justify-content: center;
     color: rgb(170, 9, 98);
     padding: 20px 70px ;
     cursor: pointer;
     border-radius: 30px;
     transition: background-color 0.3s, transform 0.2s;
     margin: 10px;
-
     font-size: 20px;
 }
 .button:nth-child(1) {
@@ -140,6 +140,7 @@ body {
     border: salmon;
     color: rgb(170, 9, 98);
     padding: 20px 70px ;
+    justify-content: center;
     cursor: pointer;
     border-radius: 30px;
     transition: background-color 0.3s, transform 0.2s;
@@ -163,11 +164,11 @@ body {
     border: rgb(255, 255, 255);
     color: rgb(170, 9, 98);
     padding: 10px 70px ;
+    justify-content: center;
     cursor: pointer;
     border-radius: 30px;
     transition: background-color 0.3s, transform 0.2s;
     margin: 10px;
-
     font-size: 20px;
     background-color: #ffffff;
 }
