@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             messageElement.innerHTML = `<span class="user">User:</span> ${message}`;
             chatBox.appendChild(messageElement);
             messageInput.value = '';
-            chatBox.scrollTop = chatBox.scrollHeight; // Scroll to the bottom
+            chatBox.scrollTop = chatBox.scrollHeight; 
         }
     }
 });

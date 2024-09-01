@@ -26,7 +26,9 @@ body {
 .buttons {
     margin-bottom: 20px; /* Space between buttons and info display */
 }
-
+.blank{
+    margin-bottom: 500px;
+}
 button {
     margin: 0 10px;
     padding: 10px 20px;
@@ -117,6 +119,7 @@ button:hover {
     text-align: center;
     opacity: 0; /* Start with hidden content */
     animation: fadeIn 2s ease-in-out forwards; /* Apply the fade-in animation */
+    margin-top: 10px;
 }
 
 .footer {

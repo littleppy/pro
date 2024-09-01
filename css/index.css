@@ -1,18 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
 body {
     display: flex;
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    font-style: bold;
+    
     justify-content: center;
     align-items: center;  
     background: linear-gradient(to right, #c6e9f3, #dac5d5);
     font-family: Arial, sans-serif;
     flex-direction: column;
     min-height: 100vh;
-     
+ 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #be6ba5, #ffb6b6);
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 10;
+    margin-right: 50px;
+    margin-left: 100px;
+    margin: 30;
+   
 }
 
-/* Photo slider styles */
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #df4c91;
+}
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.auth-links a:active {
+    background-color: #89b0dd;
+    color: #ebc8c8;
+}
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Basic reset for consistency */
+body, h1, form, label, input, button, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .photo-slider {
     position: fixed;
     position: absolute;
@@ -49,47 +102,6 @@ body {
         transform: translateX(0);
     }
 
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(90deg, #be6ba5, #ffb6b6);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: color 0.3s ease;
-}
-
-.logo a:hover {
-    color: #df4c91;
-}
-
-.auth-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.auth-links a:hover {
-    background-color: #ffffff;
-    color: #333;
 }
 .button-container {
     display: flex;
